@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #23242a;
+    
+}
+.box{
+   position: relative;
+   width: 400px;
+   height: 450px;
+   background: red; 
+   border-radius: 5px;
+   padding: 20px 30px;
+}
+.box form{
+    position: absolute;
+    inset: 6px;
+    background: #222;
+    padding: 50px 50px;
+    border-radius: 15px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+.box form h3{
+    color: red;
+    text-align: center;
+    font-weight: 500px;
+    letter-spacing: 0.2em;
+}
+.box form .mouse{
+    position: relative;
+    width:300px;
+    margin-top: 35px;
+}
+.box form .mouse input{
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 10px;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    color: #6276e9;
+    font-size: 1em; 
+    letter-spacing: 0.05em;
+    transform: 0.5s;
+    z-index: 10;
+}
+.box form .mouse span{
+    position: absolute;
+    left: 0;
+    padding: 10px 55px 0px 10px;
+    pointer-events: none;
+    color: #8f8f8f;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+    transition: 0.05s;
+
+}
+.box form .mouse input:valid-span,
+.box form .mouse input:focus-span{
+    color: #e02e2e;
+    font-size: 0.75em;
+}
+.box form .mouse i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #dd3939;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: 0.05;
+    pointer-events: none;
+}
+.box form .link {
+    display: flex;
+    justify-content: space-between;
+}
+.box form .link a{
+    margin: 10px;
+    font-size: 0.75em;
+    color: #8f8f8f;
+    text-decoration: none;
+    font-size: 19px;    
+}
+.phone{
+    height: 30px;
+    width: 300px;
+    margin-top: 50px;
+}
